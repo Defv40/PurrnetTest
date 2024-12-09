@@ -28,9 +28,9 @@ public class CubeSpawner : NetworkBehaviour
 
         // It works, but this creates objects on the scene and not in the object
 
-        if (Input.GetKeyDown(KeyCode.V))
-        {
-            var item = Instantiate(prefabItem, transform.position, Quaternion.identity);
-        }
+        //if (Input.GetKeyDown(KeyCode.V))
+        //{
+        //    var item = Instantiate(prefabItem, transform.position, Quaternion.identity);
+        //}
     }
 }
