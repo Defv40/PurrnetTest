@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 7524724416023672224}
   - component: {fileID: 1887001491230108200}
   - component: {fileID: 3719027351891636290}
+  - component: {fileID: 7684503855036943971}
+  - component: {fileID: 3693941965666335268}
+  - component: {fileID: 7758564781874542127}
   m_Layer: 0
   m_Name: Lobby_Character_1
   m_TagString: Untagged
@@ -74,6 +77,66 @@ MonoBehaviour:
     positionTolerance: 0.1
     rotationAngleTolerance: 1
     scaleTolerance: 0.05
+--- !u!143 &7684503855036943971
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7899169998953415613}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3693941965666335268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7899169998953415613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d5e4b97b1615f4aae984a3d5f4235f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
+  _toActivate: []
+  _toDeactivate: []
+  _toEnable:
+  - {fileID: 7758564781874542127}
+  _toDisable: []
+--- !u!114 &7758564781874542127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7899169998953415613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85b2bc911eeb0b4497d4e35ac1fed15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 4
+  acceleration: 4
+  jumpForce: 1.5
+  gravity: 9.81
 --- !u!1001 &7648453647856904499
 PrefabInstance:
   m_ObjectHideFlags: 0

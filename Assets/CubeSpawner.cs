@@ -8,11 +8,12 @@ public class CubeSpawner : NetworkBehaviour
     [SerializeField] private GameObject prefabItem;
     private Transform PlayerSpawner; // container for cubes 
     
-    protected override void OnSpawned()
+    protected override void OnSpawned(bool asServer)
     {
-        base.OnSpawned();
+       
         enabled = isOwner;
         
+
     }
     private void Start()
     {

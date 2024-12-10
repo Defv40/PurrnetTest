@@ -1,10 +1,15 @@
 using PurrNet;
 using UnityEngine;
 
-public class CharacterManager : MonoBehaviour
+public class CharacterManager : NetworkBehaviour
 {
     [SerializeField] private float movementSpeed;
     [SerializeField] private float jumpForce;
+
+    protected override void OnSpawned(bool asServer)
+    {
+        enabled = isOwner;
+    }
 
     private Rigidbody _rb;
     private void Awake()
